@@ -1,0 +1,6 @@
+use_frameworks!
+target 'UIDefaultFont_Tests' do
+  pod 'UIDefaultFont', :path => '../'
+  
+  
+end
