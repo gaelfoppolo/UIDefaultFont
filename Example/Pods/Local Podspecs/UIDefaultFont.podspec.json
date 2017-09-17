@@ -1,0 +1,22 @@
+{
+  "name": "UIDefaultFont",
+  "version": "0.1.0",
+  "summary": "A short description of UIDefaultFont.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/me@gaelfoppolo.com/UIDefaultFont",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "me@gaelfoppolo.com": "me@gaelfoppolo.com"
+  },
+  "source": {
+    "git": "https://github.com/me@gaelfoppolo.com/UIDefaultFont.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "UIDefaultFont/Classes/**/*"
+}
