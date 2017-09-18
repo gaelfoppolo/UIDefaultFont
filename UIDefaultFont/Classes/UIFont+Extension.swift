@@ -1,6 +1,6 @@
 //
 //  UIFont+Extension.swift
-//  FontEverywhere-testv1
+//  UIDefaultFont
 //
 //  Created by Gaël on 17/09/2017.
 //  Copyright © 2017 Gaël Foppolo. All rights reserved.
@@ -91,7 +91,7 @@ extension UIFont {
     }
 
     private class func myInitialize() {
-        
+
         if self == UIFont.self {
 
             let systemFontMethod = class_getClassMethod(self, #selector(systemFont(ofSize:)))
