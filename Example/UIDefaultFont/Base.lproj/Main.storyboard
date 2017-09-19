@@ -20,7 +20,35 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0q-Bn-g6N">
+                                <rect key="frame" x="149" y="315.5" width="76.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cE9-6S-BTy">
+                                <rect key="frame" x="152" y="263.5" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlg-N0-BRY">
+                                <rect key="frame" x="152" y="367.5" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hlg-N0-BRY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Cx1-Pf-j9O"/>
+                            <constraint firstItem="cE9-6S-BTy" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="KVq-9v-A3e"/>
+                            <constraint firstItem="n0q-Bn-g6N" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="iXe-zy-gAD"/>
+                            <constraint firstItem="n0q-Bn-g6N" firstAttribute="top" secondItem="cE9-6S-BTy" secondAttribute="bottom" constant="16" id="pB7-al-oH0"/>
+                            <constraint firstItem="hlg-N0-BRY" firstAttribute="top" secondItem="n0q-Bn-g6N" secondAttribute="bottom" constant="16" id="piw-Zs-79g"/>
+                            <constraint firstItem="n0q-Bn-g6N" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="wPv-ro-jgg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
