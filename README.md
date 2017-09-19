@@ -15,6 +15,10 @@ This library is simply one extension to `UIFont`, adding three properties:
 * `boldFontName`
 * `italicFontName`
 
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
 ## Usage
 
 Simply:
