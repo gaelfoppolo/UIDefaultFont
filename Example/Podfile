@@ -1,6 +1,11 @@
 use_frameworks!
-target 'UIDefaultFont_Tests' do
+
+target 'UIDefaultFont_Example' do
   pod 'UIDefaultFont', :path => '../'
-  
-  
+
+  target 'UIDefaultFont_Tests' do
+    inherit! :search_paths
+
+    
+  end
 end
