@@ -34,6 +34,10 @@ UIFont.italicFontName = "HelveticaNeue-ThinItalic"
 * Xcode 8.0
 * Swift 3.2+
 
+### Swift 4 Support		
+ 
+Swift 4 support is currently being tracked by the branch `swift-4` on this repository.	
+
 ## Installation
 
 UIDefaultFont is available through [CocoaPods](http://cocoapods.org). To install
