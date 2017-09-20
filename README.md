@@ -31,8 +31,8 @@ UIFont.italicFontName = "HelveticaNeue-ThinItalic"
 
 ## Requirements
 
-* Xcode 8.0
-* Swift 3.2+
+* Xcode 9.0
+* Swift 4
 
 ## Installation
 
