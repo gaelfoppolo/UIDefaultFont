@@ -5,6 +5,7 @@
 [![Version](https://img.shields.io/cocoapods/v/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
 [![License](https://img.shields.io/cocoapods/l/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
 [![Platform](https://img.shields.io/cocoapods/p/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
+[![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/UIDefaultFont.svg)](http://cocoapods.org/pods/UIDefaultFont)
 
 Replace the system font in the whole app easily
 
@@ -53,6 +54,9 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'UIDefaultFont'
 ```
+## Documentation
+
+Full documentation is available on [CocoaDocs](http://cocoadocs.org/docsets/UIDefaultFont/). You can also install documentation locally using [jazzy](https://github.com/realm/jazzy).
 
 ## Author
 
