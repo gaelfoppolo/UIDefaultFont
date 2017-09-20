@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIDefaultFont'
-  s.version          = '0.1'
+  s.version          = '0.2'
   s.summary          = 'Replace the system font in the whole app easily'
 
   s.description      = <<-DESC
@@ -20,9 +20,14 @@ We UIDefaultFont you can replace the default system font with a couple of lines.
   s.homepage         = 'https://github.com/gaelfoppolo/UIDefaultFont'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Gaël Foppolo' => 'me@gaelfoppolo.com' }
+  s.social_media_url   = "http://twitter.com/gaelugio"
   s.source           = { :git => 'https://github.com/gaelfoppolo/UIDefaultFont.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
+
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.2' }
+
+  s.requires_arc = true
 
   s.source_files = 'UIDefaultFont/Classes/**/*'
 

@@ -10,21 +10,36 @@ import UIKit
 
 extension UIFont {
 
+    /**
+    The normal font name of the system, used when not nil.
+    If nil, the default system font is used instead.
+    */
     open static var normalFontName: String? {
         didSet {
             UIFont.initialize
+            NotificationCenter.default.post(name: .normalFontChanged, object: nil)
         }
     }
 
+    /**
+    The bold font name of the system, used when not nil.
+    If nil, the default system font is used instead.
+    */
     open static var boldFontName: String? {
         didSet {
             UIFont.initialize
+            NotificationCenter.default.post(name: .boldFontChanged, object: nil)
         }
     }
 
+    /**
+    The italic font name of the system, used when not nil.
+    If nil, the default system font is used instead.
+    */
     open static var italicFontName: String? {
         didSet {
             UIFont.initialize
+            NotificationCenter.default.post(name: .italicFontChanged, object: nil)
         }
     }
 
