@@ -50,6 +50,9 @@
                             <constraint firstItem="n0q-Bn-g6N" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="wPv-ro-jgg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="normalLabel" destination="cE9-6S-BTy" id="kvc-TT-xzS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

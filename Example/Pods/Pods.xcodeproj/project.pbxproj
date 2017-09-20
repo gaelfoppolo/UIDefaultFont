@@ -12,6 +12,7 @@
 		09A0034A8EC4FA7DB848E11D66981CEE /* Pods-UIDefaultFont_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4EDB65EE33D91BCBFEA974432DB8D9 /* Pods-UIDefaultFont_Tests-dummy.m */; };
 		8A5ADF11E165DCA8044D800A02A46921 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		933BCD411F70CA690063F649 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933BCD401F70CA650063F649 /* UIFont+Extension.swift */; };
+		93BB55851F72DD7D00B5EBEF /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BB55841F72DD7D00B5EBEF /* NotificationName+Extension.swift */; };
 		A0351D47EC85554242986BFDE5C969CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		B87155BDDA910BE4E1979BE4A3837A62 /* UIDefaultFont-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD6DA37E873A1589912CCBF99A2B7DC /* UIDefaultFont-dummy.m */; };
 		C8E94BB6F5BD9F385BFBE777CCFDB10B /* Pods-UIDefaultFont_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 686C3AF8FE399B9F8E730ADD54E6B23F /* Pods-UIDefaultFont_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +47,7 @@
 		82641D20491BF523E357A0B31DCB93F8 /* Pods-UIDefaultFont_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UIDefaultFont_Example.modulemap"; sourceTree = "<group>"; };
 		933BCD401F70CA650063F649 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIFont+Extension.swift"; path = "UIDefaultFont/Classes/UIFont+Extension.swift"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93BB55841F72DD7D00B5EBEF /* NotificationName+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NotificationName+Extension.swift"; path = "UIDefaultFont/Classes/NotificationName+Extension.swift"; sourceTree = "<group>"; };
 		95D99A3029AD83FA359B03F3F332E6B5 /* Pods-UIDefaultFont_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIDefaultFont_Example-dummy.m"; sourceTree = "<group>"; };
 		AA95338C18A668DF59D800A1EC0219FA /* Pods-UIDefaultFont_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIDefaultFont_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AF690A46CE4988BCD2889BC3B19946FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				933BCD401F70CA650063F649 /* UIFont+Extension.swift */,
+				93BB55841F72DD7D00B5EBEF /* NotificationName+Extension.swift */,
 				9659CCE84F4973172284D04814B28645 /* Support Files */,
 			);
 			name = UIDefaultFont;
@@ -344,6 +347,7 @@
 			files = (
 				933BCD411F70CA690063F649 /* UIFont+Extension.swift in Sources */,
 				B87155BDDA910BE4E1979BE4A3837A62 /* UIDefaultFont-dummy.m in Sources */,
+				93BB55851F72DD7D00B5EBEF /* NotificationName+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

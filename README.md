@@ -29,14 +29,21 @@ UIFont.boldFontName = "Noteworthy-Bold"
 UIFont.italicFontName = "HelveticaNeue-ThinItalic"
 ```
 
+If you want to be notify (to update already displayed labels for example), you can observe these three notifications:
+* `normalFontChanged`
+* `boldFontChanged`
+* `italicFontChanged`
+
+```swift
+NotificationCenter.default.addObserver(self, selector: #selector(updateNormalFont), name: .normalFontChanged, object: nil)
+```
+
 ## Requirements
 
 * Xcode 8.0
 * Swift 3.2+
 
-### Swift 4 Support		
- 
-Swift 4 support is currently being tracked by the branch `swift-4` on this repository.	
+*Swift 4 support is currently being tracked by the branch `swift-4` on this repository.*
 
 ## Installation
 

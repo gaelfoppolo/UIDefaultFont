@@ -13,18 +13,21 @@ extension UIFont {
     open static var normalFontName: String? {
         didSet {
             UIFont.initialize
+            NotificationCenter.default.post(name: .normalFontChanged, object: nil)
         }
     }
 
     open static var boldFontName: String? {
         didSet {
             UIFont.initialize
+            NotificationCenter.default.post(name: .boldFontChanged, object: nil)
         }
     }
 
     open static var italicFontName: String? {
         didSet {
             UIFont.initialize
+            NotificationCenter.default.post(name: .italicFontChanged, object: nil)
         }
     }
 
