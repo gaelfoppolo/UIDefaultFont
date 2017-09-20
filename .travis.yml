@@ -13,7 +13,7 @@ language: objective-c
 # - pod install --project-directory=Example
 
 script:
-  - set -o pipefail && xcodebuild test -workspace Example/UIDefaultFont.xcworkspace -scheme UIDefaultFont-Example -sdk iphonesimulator -destination 'OS=10.11,name=iPhone 7 Plus' | xcpretty
+  - set -o pipefail && xcodebuild test -workspace Example/UIDefaultFont.xcworkspace -scheme UIDefaultFont-Example -sdk iphonesimulator -destination 'OS=11.0,name=iPhone 7 Plus' | xcpretty
   - pod lib lint
 after_success:
   - bash <(curl -s https://codecov.io/bash)
