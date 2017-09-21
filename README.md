@@ -1,7 +1,7 @@
 # UIDefaultFont
 
 [![CI Status](http://img.shields.io/travis/gaelfoppolo/UIDefaultFont.svg?style=flat)](https://travis-ci.org/gaelfoppolo/UIDefaultFont)
-![Swift 3.1](https://img.shields.io/badge/Swift-3.2-orange.svg)
+![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg)
 [![Version](https://img.shields.io/cocoapods/v/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
 [![License](https://img.shields.io/cocoapods/l/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
 [![Platform](https://img.shields.io/cocoapods/p/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
@@ -43,6 +43,8 @@ NotificationCenter.default.addObserver(self, selector: #selector(updateNormalFon
 
 * Xcode 9.0
 * Swift 4
+
+*Swift 3 support is available on the branch `swift-3` on this repository.*
 
 ## Installation
 
