@@ -25,7 +25,7 @@ We UIDefaultFont you can replace the default system font with a couple of lines.
 
   s.ios.deployment_target = '10.0'
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.2' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 
   s.requires_arc = true
 
