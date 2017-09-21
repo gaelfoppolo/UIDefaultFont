@@ -79,7 +79,7 @@ extension UIFont {
 
         // retrieve the descriptor and usage attribute
         if let fontDescriptor = aDecoder.decodeObject(forKey: "UIFontDescriptor") as? UIFontDescriptor,
-            let fontAttribute = fontDescriptor.fontAttributes["NSCTFontUIUsageAttribute"] as? String {
+            let fontAttribute = fontDescriptor.fontAttributes[UIFontDescriptor.AttributeName(rawValue: "NSCTFontUIUsageAttribute")] as? String {
 
             var fontName: String!
 
@@ -111,20 +111,20 @@ extension UIFont {
 
             let systemFontMethod = class_getClassMethod(self, #selector(systemFont(ofSize:)))
             let mySystemFontMethod = class_getClassMethod(self, #selector(mySystemFont(ofSize:)))
-            method_exchangeImplementations(systemFontMethod, mySystemFontMethod)
+            method_exchangeImplementations(systemFontMethod!, mySystemFontMethod!)
 
             let boldSystemFontMethod = class_getClassMethod(self, #selector(boldSystemFont(ofSize:)))
             let myBoldSystemFontMethod = class_getClassMethod(self, #selector(myBoldSystemFont(ofSize:)))
-            method_exchangeImplementations(boldSystemFontMethod, myBoldSystemFontMethod)
+            method_exchangeImplementations(boldSystemFontMethod!, myBoldSystemFontMethod!)
 
             let italicSystemFontMethod = class_getClassMethod(self, #selector(italicSystemFont(ofSize:)))
             let myItalicSystemFontMethod = class_getClassMethod(self, #selector(myItalicSystemFont(ofSize:)))
-            method_exchangeImplementations(italicSystemFontMethod, myItalicSystemFontMethod)
+            method_exchangeImplementations(italicSystemFontMethod!, myItalicSystemFontMethod!)
 
             // Trick to get over the lack of UIFont.init(coder:))
             let initCoderMethod = class_getInstanceMethod(self, #selector(UIFontDescriptor.init(coder:)))
             let myInitCoderMethod = class_getInstanceMethod(self, #selector(UIFont.init(myCoder:)))
-            method_exchangeImplementations(initCoderMethod, myInitCoderMethod)
+            method_exchangeImplementations(initCoderMethod!, myInitCoderMethod!)
         }
     }
 }

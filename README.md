@@ -41,10 +41,8 @@ NotificationCenter.default.addObserver(self, selector: #selector(updateNormalFon
 
 ## Requirements
 
-* Xcode 8.0
-* Swift 3.2+
-
-*Swift 4 support is currently being tracked by the branch `swift-4` on this repository.*
+* Xcode 9.0
+* Swift 4
 
 ## Installation
 
