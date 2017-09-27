@@ -6,6 +6,7 @@
 [![License](https://img.shields.io/cocoapods/l/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
 [![Platform](https://img.shields.io/cocoapods/p/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
 [![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/UIDefaultFont.svg)](http://cocoapods.org/pods/UIDefaultFont)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Replace the system font in the whole app easily
 
@@ -48,12 +49,26 @@ NotificationCenter.default.addObserver(self, selector: #selector(updateNormalFon
 
 ## Installation
 
+### CocoaPods
+
 UIDefaultFont is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'UIDefaultFont'
 ```
+
+### Carthage
+
+If you use Carthage to manage your dependencies, simply add
+UIDefaultFont to your `Cartfile`:
+
+```
+github "gaelfoppolo/UIDefaultFont"
+```
+
+If you use Carthage to build your dependencies, make sure you have added `UIDefaultFont.framework` to the "_Linked Frameworks and Libraries_" section of your target, and have included `UIDefaultFont.framework` in your Carthage framework copying build phase.
+
 ## Documentation
 
 Full documentation is available on [CocoaDocs](http://cocoadocs.org/docsets/UIDefaultFont/). You can also install documentation locally using [jazzy](https://github.com/realm/jazzy).
