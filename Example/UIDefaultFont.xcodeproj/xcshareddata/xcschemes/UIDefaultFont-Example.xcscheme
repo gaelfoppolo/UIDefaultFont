@@ -54,6 +54,16 @@
                ReferencedContainer = "container:UIDefaultFont.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "93217AF21F7BEB1A0053525C"
+               BuildableName = "UIDefaultFontTests.xctest"
+               BlueprintName = "UIDefaultFontTests"
+               ReferencedContainer = "container:UIDefaultFont.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
