@@ -561,6 +561,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIDefaultFont_Example.app/UIDefaultFont_Example";
 			};
 			name = Debug;
 		};
@@ -575,6 +576,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UIDefaultFont_Example.app/UIDefaultFont_Example";
 			};
 			name = Release;
 		};
