@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UIDefaultFont'
-  s.version          = '0.3'
+  s.version          = '0.4'
   s.summary          = 'Replace the system font in the whole app easily'
 
   s.description      = <<-DESC
