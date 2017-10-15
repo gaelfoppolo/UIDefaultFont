@@ -10,14 +10,10 @@ env:
     - SCHEME="UIDefaultFont-iOS" DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=11.0" PLATFORM="iOS"
 
 before_install:
-  - brew update
-  - brew outdated carthage || brew upgrade carthage
   - gem install xcpretty
 
 before_script:
   - open -b com.apple.iphonesimulator
-  - carthage bootstrap --platform $PLATFORM
-
 script:
   # Build Framework
   - set -o pipefail && xcodebuild test -project "$PROJECT" -scheme "$SCHEME" -destination "$DESTINATION" | xcpretty
