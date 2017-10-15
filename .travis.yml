@@ -5,9 +5,9 @@ language: objective-c
 env:
   global:
     - PROJECT="UIDefaultFont.xcodeproj"
-    matrix:
-      - SCHEME="UIDefaultFont-iOS" DESTINATION="platform=iOS Simulator,name=iPhone 6,OS=10.0" PLATFORM="iOS"
-      - SCHEME="UIDefaultFont-iOS" DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=11.0" PLATFORM="iOS"
+  matrix:
+    - SCHEME="UIDefaultFont-iOS" DESTINATION="platform=iOS Simulator,name=iPhone 6,OS=10.0" PLATFORM="iOS"
+    - SCHEME="UIDefaultFont-iOS" DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=11.0" PLATFORM="iOS"
 
 before_install:
   - brew update
