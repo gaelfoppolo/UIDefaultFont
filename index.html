@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UIDefaultFont  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="UIDefaultFont  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">UIDefaultFont Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/gaelfoppolo/UIDefaultFont"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">UIDefaultFont Reference</a>
+        <img id="carat" src="img/carat.png" />
+        UIDefaultFont  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/Notification/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UIFont.html">UIFont</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='uidefaultfont' class='heading'>UIDefaultFont</h1>
+
+<p><a href="https://travis-ci.org/gaelfoppolo/UIDefaultFont"><img src="http://img.shields.io/travis/gaelfoppolo/UIDefaultFont.svg?style=flat" alt="CI Status"></a>
+<img src="https://img.shields.io/badge/Swift-4-orange.svg" alt="Swift 4">
+<a href="http://cocoapods.org/pods/UIDefaultFont"><img src="https://img.shields.io/cocoapods/v/UIDefaultFont.svg?style=flat" alt="Version"></a>
+<a href="http://cocoapods.org/pods/UIDefaultFont"><img src="https://img.shields.io/cocoapods/l/UIDefaultFont.svg?style=flat" alt="License"></a>
+<a href="http://cocoapods.org/pods/UIDefaultFont"><img src="https://img.shields.io/cocoapods/p/UIDefaultFont.svg?style=flat" alt="Platform"></a>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a></p>
+
+<p>Replace the system font in the whole app easily</p>
+
+<p>No more wasted time and effort, searching and overriding the font of every displayed string in your app. At runtime, you can change the system font and it will be replaced everywhere it&rsquo;s used in the application.</p>
+
+<p>This library is simply one extension to <code>UIFont</code>, adding three properties:</p>
+
+<ul>
+<li><code>normalFontName</code></li>
+<li><code>boldFontName</code></li>
+<li><code>italicFontName</code></li>
+</ul>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>Simply:</p>
+<pre class="highlight swift"><code><span class="kt">UIFont</span><span class="o">.</span><span class="n">normalFontName</span> <span class="o">=</span> <span class="s">"Courier"</span>
+<span class="kt">UIFont</span><span class="o">.</span><span class="n">boldFontName</span> <span class="o">=</span> <span class="s">"Noteworthy-Bold"</span>
+<span class="kt">UIFont</span><span class="o">.</span><span class="n">italicFontName</span> <span class="o">=</span> <span class="s">"HelveticaNeue-ThinItalic"</span>
+</code></pre>
+
+<p>If you want to be notify (to update already displayed labels for example), you can observe these three notifications:</p>
+
+<ul>
+<li><code>normalFontChanged</code></li>
+<li><code>boldFontChanged</code></li>
+<li><code>italicFontChanged</code></li>
+</ul>
+<pre class="highlight swift"><code><span class="kt">NotificationCenter</span><span class="o">.</span><span class="k">default</span><span class="o">.</span><span class="nf">addObserver</span><span class="p">(</span><span class="k">self</span><span class="p">,</span> <span class="nv">selector</span><span class="p">:</span> <span class="kd">#selector(</span><span class="nf">updateNormalFont</span><span class="kd">)</span><span class="p">,</span> <span class="nv">name</span><span class="p">:</span> <span class="o">.</span><span class="n">normalFontChanged</span><span class="p">,</span> <span class="nv">object</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+</code></pre>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>Xcode 9.0</li>
+<li>Swift 4</li>
+</ul>
+
+<p><em>Swift 3 support is available on the branch <code>swift-3</code> on this repository.</em></p>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p>UIDefaultFont is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'UIDefaultFont'</span>
+</code></pre>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p>If you use Carthage to manage your dependencies, simply add
+UIDefaultFont to your <code>Cartfile</code>:</p>
+<pre class="highlight plaintext"><code>github "gaelfoppolo/UIDefaultFont"
+</code></pre>
+
+<p>If you use Carthage to build your dependencies, make sure you have added <code>UIDefaultFont.framework</code> to the <q>_Linked Frameworks and Libraries_</q> section of your target, and have included <code>UIDefaultFont.framework</code> in your Carthage framework copying build phase.</p>
+<h2 id='documentation' class='heading'>Documentation</h2>
+
+<p>Full documentation is available on <a href="http://cocoadocs.org/docsets/UIDefaultFont/">CocoaDocs</a>. You can also install documentation locally using <a href="https://github.com/realm/jazzy">jazzy</a>.</p>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>Gaël Foppolo, <a href="mailto:me@gaelfoppolo.com">me@gaelfoppolo.com</a></p>
+<h2 id='contribution-and-maintenance' class='heading'>Contribution and Maintenance</h2>
+
+<p>System font available on iOS is surely subject to possible change,
+and when it does, this library should still work properly.
+If you would like to help maintain or improve this library please feel free to do so. </p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>UIDefaultFont is free software, and may be redistributed under the terms specified in the <a href="/LICENSE">LICENSE</a> file.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2017 Gaël Foppolo. Available under the MIT License.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
