@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/cocoapods/l/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
 [![Platform](https://img.shields.io/cocoapods/p/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/UIDefaultFont.svg)](http://cocoapods.org/pods/UIDefaultFont)
+[![Documentation](https://github.com/gaelfoppolo/UIDefaultFont/blob/gh-pages/badge.svg)](https://gaelfoppolo.github.io/UIDefaultFont)
 [![codecov.io](https://codecov.io/github/gaelfoppolo/UIDefaultFont/coverage.svg?branch=master)](https://codecov.io/github/gaelfoppolo/UIDefaultFont?branch=master)
 
 Replace the system font in the whole app easily
@@ -66,9 +66,20 @@ github "gaelfoppolo/UIDefaultFont"
 
 If you use Carthage to build your dependencies, make sure you have added `UIDefaultFont.framework` to the "_Linked Frameworks and Libraries_" section of your target, and have included `UIDefaultFont.framework` in your Carthage framework copying build phase.
 
+### Swift Pacakge Manager
+
+If you use Swift Pacakage Manager to manage your dependencies, simply add
+UIDefaultFont to your `Package.swift`:
+
+```swift
+dependencies: [
+    .Package(url: "https://github.com/gaelfoppolo/UIDefaultFont.git")
+]
+```
+
 ## Documentation
 
-Full documentation is available on [CocoaDocs](http://cocoadocs.org/docsets/UIDefaultFont/). You can also install documentation locally using [jazzy](https://github.com/realm/jazzy).
+Full documentation is available on [GitHub](https://gaelfoppolo.github.io/UIDefaultFont/). You can also install documentation locally using [jazzy](https://github.com/realm/jazzy).
 
 ## Author
 
