@@ -54,7 +54,9 @@
 <a href="http://cocoapods.org/pods/UIDefaultFont"><img src="https://img.shields.io/cocoapods/v/UIDefaultFont.svg?style=flat" alt="Version"></a>
 <a href="http://cocoapods.org/pods/UIDefaultFont"><img src="https://img.shields.io/cocoapods/l/UIDefaultFont.svg?style=flat" alt="License"></a>
 <a href="http://cocoapods.org/pods/UIDefaultFont"><img src="https://img.shields.io/cocoapods/p/UIDefaultFont.svg?style=flat" alt="Platform"></a>
-<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a></p>
+<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a>
+<a href="https://gaelfoppolo.github.io/UIDefaultFont"><img src="https://github.com/gaelfoppolo/UIDefaultFont/blob/gh-pages/badge.svg" alt="Documentation"></a>
+<a href="https://codecov.io/github/gaelfoppolo/UIDefaultFont?branch=master"><img src="https://codecov.io/github/gaelfoppolo/UIDefaultFont/coverage.svg?branch=master" alt="codecov.io"></a></p>
 
 <p>Replace the system font in the whole app easily</p>
 
@@ -107,9 +109,17 @@ UIDefaultFont to your <code>Cartfile</code>:</p>
 </code></pre>
 
 <p>If you use Carthage to build your dependencies, make sure you have added <code>UIDefaultFont.framework</code> to the <q>_Linked Frameworks and Libraries_</q> section of your target, and have included <code>UIDefaultFont.framework</code> in your Carthage framework copying build phase.</p>
+<h3 id='swift-pacakge-manager' class='heading'>Swift Pacakge Manager</h3>
+
+<p>If you use Swift Pacakage Manager to manage your dependencies, simply add
+UIDefaultFont to your <code>Package.swift</code>:</p>
+<pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="kt">Package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/gaelfoppolo/UIDefaultFont.git"</span><span class="p">)</span>
+<span class="p">]</span>
+</code></pre>
 <h2 id='documentation' class='heading'>Documentation</h2>
 
-<p>Full documentation is available on <a href="http://cocoadocs.org/docsets/UIDefaultFont/">CocoaDocs</a>. You can also install documentation locally using <a href="https://github.com/realm/jazzy">jazzy</a>.</p>
+<p>Full documentation is available on <a href="https://gaelfoppolo.github.io/UIDefaultFont/">GitHub</a>. You can also install documentation locally using <a href="https://github.com/realm/jazzy">jazzy</a>.</p>
 <h2 id='author' class='heading'>Author</h2>
 
 <p>Gaël Foppolo, <a href="mailto:me@gaelfoppolo.com">me@gaelfoppolo.com</a></p>
