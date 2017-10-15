@@ -1,6 +1,0 @@
-framework module UIDefaultFont {
-  umbrella header "UIDefaultFont-umbrella.h"
-
-  export *
-  module * { export * }
-}

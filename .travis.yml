@@ -1,19 +1,28 @@
-# references:
-# * http://www.objc.io/issue-6/travis-ci.html
-# * https://github.com/supermarin/xcpretty#usage
-
 os: osx
 osx_image: xcode9
 language: objective-c
-# cache: cocoapods
-# podfile: Example/Podfile
 
-# before_install:
-# - gem install cocoapods # Since Travis is not always on latest version
-# - pod install --project-directory=Example
+env:
+  global:
+    - PROJECT="UIDefaultFont.xcodeproj"
+    matrix:
+      - SCHEME="UIDefaultFont-iOS" DESTINATION="platform=iOS Simulator,name=iPhone 6,OS=10.0" PLATFORM="iOS"
+      - SCHEME="UIDefaultFont-iOS" DESTINATION="platform=iOS Simulator,name=iPhone 7,OS=11.0" PLATFORM="iOS"
+
+before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+  - gem install xcpretty
+
+before_script:
+  - open -b com.apple.iphonesimulator
+  - carthage bootstrap --platform $PLATFORM
 
 script:
-  - set -o pipefail && xcodebuild test -workspace Example/UIDefaultFont.xcworkspace -scheme UIDefaultFont-Example -sdk iphonesimulator -destination 'OS=11.0,name=iPhone 7 Plus' | xcpretty
-  - pod lib lint
+  # Build Framework
+  - set -o pipefail && xcodebuild test -project "$PROJECT" -scheme "$SCHEME" -destination "$DESTINATION" | xcpretty
+  # Build Project with Package Managers
+  - carthage build --platform $PLATFORM --no-skip-current
+  - pod lib lint --swift-version=4.0
 after_success:
   - bash <(curl -s https://codecov.io/bash)

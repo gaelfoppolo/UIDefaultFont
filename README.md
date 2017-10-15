@@ -5,7 +5,6 @@
 [![Version](https://img.shields.io/cocoapods/v/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
 [![License](https://img.shields.io/cocoapods/l/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
 [![Platform](https://img.shields.io/cocoapods/p/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
-[![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/UIDefaultFont.svg)](http://cocoapods.org/pods/UIDefaultFont)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Replace the system font in the whole app easily
@@ -16,10 +15,6 @@ This library is simply one extension to `UIFont`, adding three properties:
 * `normalFontName`
 * `boldFontName`
 * `italicFontName`
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Usage
 
