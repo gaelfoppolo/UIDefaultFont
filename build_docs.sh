@@ -3,4 +3,6 @@ set -e
 
 git submodule update --remote
 
-jazzy
+jazzy --config UIDefaultFont/.jazzy.yaml
+
+open index.html
