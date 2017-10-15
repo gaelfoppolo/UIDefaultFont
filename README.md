@@ -6,6 +6,8 @@
 [![License](https://img.shields.io/cocoapods/l/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
 [![Platform](https://img.shields.io/cocoapods/p/UIDefaultFont.svg?style=flat)](http://cocoapods.org/pods/UIDefaultFont)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods](https://img.shields.io/cocoapods/metrics/doc-percent/UIDefaultFont.svg)](http://cocoapods.org/pods/UIDefaultFont)
+[![codecov.io](https://codecov.io/github/gaelfoppolo/UIDefaultFont/coverage.svg?branch=master)](https://codecov.io/github/gaelfoppolo/UIDefaultFont?branch=master)
 
 Replace the system font in the whole app easily
 
