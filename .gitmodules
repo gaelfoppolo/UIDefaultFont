@@ -1,0 +1,4 @@
+[submodule "UIDefaultFont"]
+	path = UIDefaultFont
+	url = https://github.com/gaelfoppolo/UIDefaultFont.git
+branch = master
