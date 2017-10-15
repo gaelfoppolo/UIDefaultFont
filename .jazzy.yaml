@@ -1,1 +1,11 @@
-podspec: UIDefaultFont.podspec
+swift_version: 4.0
+author: "Gaël Foppolo"
+author_url: "http://twitter.com/gaelugio"
+source_directory: "UIDefaultFont"
+module: "UIDefaultFont"
+copyright: "Copyright © 2017 Gaël Foppolo. Available under the MIT License."
+github_url: "https://github.com/gaelfoppolo/UIDefaultFont"
+framework_root: "https://gaelfoppolo.github.io/UIDefaultFont"
+output: ./
+min_acl: public
+use_safe_filenames:
